@@ -2,14 +2,16 @@
     <div class="left">
         <div class="card">
             <h1>BEM-VINDO</h1>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Senha">
-            <div class="button-p">
-                <button>ENTRAR</button>
-                <a routerLink="/register">
-                    <p>Ainda não tem uma conta? Clique aqui!</p>
-                </a>
-            </div>
+            <form (ngSubmit)="onSubmit()">
+                <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+                <input type="password" placeholder="Senha" [(ngModel)]="password" name="password" required>
+                <div class="button-p">
+                    <button type="submit">ENTRAR</button>
+                    <a routerLink="/register">
+                        <p>Ainda não tem uma conta? Clique aqui!</p>
+                    </a>
+                </div>
+            </form>
         </div>
     </div>
     <div class="right">

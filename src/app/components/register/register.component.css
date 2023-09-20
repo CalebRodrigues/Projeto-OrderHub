@@ -20,6 +20,29 @@ img{
     width: 550px;
 }
 
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    margin-top: -20px;
+}
+
+input{
+    width: 70%;
+    padding: 8px 9px 9px 18px;
+    border: 1px solid whitesmoke;
+    border-radius: 18px;
+    background-color: whitesmoke;
+    color: #818181;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
 .left{
     height: 100%;
     width: 50%;
@@ -27,7 +50,7 @@ img{
     justify-content: center;
     align-items: center;
     background: rgb(11,41,96);
-    background: linear-gradient(0deg, rgba(11,41,96,1) 0%, rgba(18,65,152,1) 56%, #1e63e3 100%);
+    background: linear-gradient(0deg, rgba(11,41,96,1) 0%, rgba(18,65,152,1) 56%, rgba(30,99,227,1) 100%);
 }
 
 .right{
@@ -56,26 +79,12 @@ img{
     color: whitesmoke;
 }
 
-.card > input{
-    width: 60%;
-    margin-top: -20px;
-    margin-bottom: -32px;
-    padding: 8px 9px 9px 18px;
-    border: 1px solid whitesmoke;
-    border-radius: 18px;
-    background-color: whitesmoke;
-    color: #818181;
-}
-
-.card > input:focus{
-    outline: none;
-}
-
 .button-p{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 15px;
 }
 
 .button-p > button{
